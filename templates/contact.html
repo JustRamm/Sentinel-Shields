@@ -12,8 +12,9 @@
     document.documentElement.classList.add('js');
   </script>
 
-  <link rel="stylesheet" href="/static/constyles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/finalfavicon.png">
+  <link rel="stylesheet" href="/static/assets/css/constyles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/brand/finalfavicon.png">
+  <link rel="apple-touch-icon" href="/static/brand/icon.png">
   <link rel="manifest" href="site.webmanifest">
   <!--NOT INSPECTING MECHANISM
     ==================================================-->
@@ -76,7 +77,7 @@
 
       <div class="s-header__logo">
         <a class="logo" href="{{url_for('landing')}}">
-          <img src="/static/logo.svg" alt="Homepage">
+          <img src="/static/brand/logo.svg" alt="Homepage">
         </a>
       </div>
 
@@ -117,7 +118,7 @@
           <a href="#about" class="smoothscroll">
             <span>Scroll Down</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-              style="fill: rgba(0, 0, 0, 1);transform: rotate(180deg);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);">
+              style="fill: rgba(0, 0, 0, 1); transform: rotate(180deg);">
               <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
             </svg>
           </a>
@@ -324,7 +325,7 @@
       <div class="ss-go-top">
         <a class="smoothscroll" title="Back to Top" href="#top">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-            style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+            style="fill: rgba(0, 0, 0, 1);">
             <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path>
           </svg>
         </a>
@@ -336,8 +337,8 @@
 
   <!-- Java Script
 ================================================== -->
-  <script src="/static/plugins.js"></script>
-  <script src="/static/main.js"></script>
+  <script src="/static/assets/js/plugins.js"></script>
+  <script src="/static/assets/js/main.js"></script>
 
 
 </body>

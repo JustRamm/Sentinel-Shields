@@ -12,8 +12,9 @@
     document.documentElement.classList.add('js');
   </script>
 
-  <link rel="stylesheet" href="/static/help.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/logo.svg">
+  <link rel="stylesheet" href="/static/assets/css/help.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/brand/logo.svg">
+  <link rel="apple-touch-icon" href="/static/brand/icon.png">
   <link rel="manifest" href="site.webmanifest">
   <!--NOT INSPECTING MECHANISM
     ==================================================-->
@@ -25,36 +26,7 @@
     }
   </script>
 
-  <style>
-    /* Custom CSS for the contact us section */
-    #contact {
-      background-color: #cecece;
-      padding: 50px;
-      color: white;
-      text-align: center;
-    }
 
-    #contactForm {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    #contactForm input[type="text"],
-    #contactForm input[type="email"],
-    #contactForm textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #555;
-      background-color: #444;
-      color: white;
-      box-sizing: border-box;
-    }
-
-    #contactForm textarea {
-      height: 150px;
-    }
-  </style>
 </head>
 
 <body id="top">
@@ -76,7 +48,7 @@
 
       <div class="s-header__logo">
         <a class="logo" href="{{url_for('landing')}}">
-          <img src="/static/logo.svg" alt="Homepage">
+          <img src="/static/brand/logo.svg" alt="Homepage">
         </a>
       </div>
 
@@ -132,8 +104,7 @@
         <div class="s-intro__scroll">
           <a href="#about" class="smoothscroll">
             <span>Scroll Down</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-              style="fill: rgba(0, 0, 0, 1);transform: rotate(180deg); msFilter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
             </svg>
           </a>
@@ -172,47 +143,40 @@
           </div> <!-- end column -->
         </div> <!-- end section header -->
         <div class="s-services__content">
-          <dl class="services-list-horizontal" data-animate-block style="margin-top: 20px;">
-            <div class="service-item-horizontal" data-animate-el
-              style="padding-bottom: 20px; opacity: 1; transform: translateY(0px); padding-left: 200px; padding-right: 200px;">
-              <dt style="margin-bottom: 10px;">User Interface Guide</dt>
+          <dl class="services-list-horizontal" data-animate-block>
+            <div class="service-item-horizontal" data-animate-el>
+              <dt>User Interface Guide</dt>
               <dd>SENTINAL SHIELD features an intuitive user interface designed for ease of use. Navigate through the
                 system effortlessly using the on-screen prompts and instructions</dd>
             </div> <!-- end service-item-horizontal -->
-            <div class="service-item-horizontal" data-animate-el
-              style="padding-bottom: 20px; opacity: 1; transform: translateY(0px); padding-left: 200px; padding-right: 200px;">
-              <dt style="margin-bottom: 10px;">QR Code Scanning Process</dt>
+            <div class="service-item-horizontal" data-animate-el>
+              <dt>QR Code Scanning Process</dt>
               <dd>Ensure proper lighting and positioning when scanning the QR code on your passport. If you encounter
                 any issues, seek assistance from the nearby officer for guidance.</dd>
             </div> <!-- end service-item-horizontal -->
-            <div class="service-item-horizontal" data-animate-el
-              style="padding-bottom: 20px; opacity: 1; transform: translateY(0px); padding-left: 200px; padding-right: 200px;">
-              <dt style="margin-bottom: 10px;">Face Recognition Process</dt>
+            <div class="service-item-horizontal" data-animate-el>
+              <dt>Face Recognition Process</dt>
               <dd>During face recognition, stand still and face the camera directly. Maintain a suitable distance as
                 indicated for accurate verification. The system will notify you once the process is complete.</dd>
             </div> <!-- end service-item-horizontal -->
-            <div class="service-item-horizontal" data-animate-el
-              style="padding-bottom: 20px; opacity: 1; transform: translateY(0px); padding-left: 200px; padding-right: 200px;">
-              <dt style="margin-bottom: 10px;">Officer Assistance</dt>
+            <div class="service-item-horizontal" data-animate-el>
+              <dt>Officer Assistance</dt>
               <dd>Trained officers are stationed beside SENTINAL SHIELD to provide assistance and support to passengers.
                 Don't hesitate to approach them if you need help or have any questions.
               </dd>
             </div> <!-- end service-item-horizontal -->
-            <div class="service-item-horizontal" data-animate-el
-              style="padding-bottom: 20px; opacity: 1; transform: translateY(0px); padding-left: 200px; padding-right: 200px;">
-              <dt style="margin-bottom: 10px;">Troubleshooting</dt>
+            <div class="service-item-horizontal" data-animate-el>
+              <dt>Troubleshooting</dt>
               <dd>If you experience difficulties scanning the QR code or with face recognition, ensure there is adequate
                 lighting and follow the on-screen instructions. For further assistance, consult the nearby officer.</dd>
             </div> <!-- end service-item-horizontal -->
-            <div class="service-item-horizontal" data-animate-el
-              style="padding-bottom: 20px; opacity: 1; transform: translateY(0px); padding-left: 200px; padding-right: 200px;">
-              <dt style="margin-bottom: 10px;">Contact Information</dt>
+            <div class="service-item-horizontal" data-animate-el>
+              <dt>Contact Information</dt>
               <dd>For technical support or customer service inquiries, please contact us at [insert contact details] or
                 approach the nearest airport staff member.</dd>
               <br><br>
-              <div class="service-item-horizontal" data-animate-el
-                style="padding-bottom: 20px; opacity: 1; transform: translateY(0px); padding-left: 200px; padding-right: 200px;">
-                <dt style="margin-bottom: 10px;">Frequently Asked Questions (FAQs):</dt>
+              <div class="service-item-horizontal" data-animate-el>
+                <dt>Frequently Asked Questions (FAQs):</dt>
                 <dd>Q: How long does the verification process take?
                   A: The verification process typically takes a few seconds, but may vary depending on factors such as
                   network connectivity and system load.<br>
@@ -260,8 +224,8 @@
 
   <!-- Java Script
 ================================================== -->
-  <script src="/static/plugins.js"></script>
-  <script src="/static/main.js"></script>
+  <script src="/static/assets/js/plugins.js"></script>
+  <script src="/static/assets/js/main.js"></script>
 
 
 </body>

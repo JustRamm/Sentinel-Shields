@@ -211,11 +211,10 @@ def facercg():
     camera.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
     camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
     # Load a sample picture and learn how to recognize it.
-    path = 'C:/Users/adnan/Documents/Project/FinalProject/Faces'
-    os.chdir(path)
+    path = 'data/faces'
     global face_image
-    face_image = f'{datetime.date.today()}_{data}.jpg'
-    x_image = face_recognition.load_image_file(f'{datetime.date.today()}_{data}.jpg')
+    face_image = os.path.join(path, f'{datetime.date.today()}_{data}.jpg')
+    x_image = face_recognition.load_image_file(face_image)
     x_face_encoding = face_recognition.face_encodings(x_image)[0]
     # Create arrays of known face encodings and their names
     
@@ -352,7 +351,7 @@ def gen_frames():
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n') 
 
 
-app = Flask(__name__,template_folder="templates") 
+app = Flask(__name__, static_folder="public", template_folder="templates") 
 
 # Admin Database configuration
 db_config = {
@@ -518,10 +517,8 @@ def process():
     global data
     data = request.get_json()
     print('The catregno is: ', data)
-    os.getcwd()
-    global face_image
-    face_image = f'{datetime.date.today()}_{data}.jpg'
-    fname=readBLOB(data,os.path.join('Faces',f'{datetime.date.today()}_{data}.jpg'))
+    target_path = os.path.join('data', 'faces', f'{datetime.date.today()}_{data}.jpg')
+    fname = readBLOB(data, target_path)
     if fname!="None":
         return jsonify({'status':'success'})
     else:
@@ -553,8 +550,7 @@ def verification():
     data = io.BytesIO()
     im.save(data,"JPEG")
     encoded_img_data = base64.b64encode(data.getvalue())
-    path2 = 'C:/Users/adnan/Documents/Project/FinalProject'
-    os.chdir(path2)
+    path2 = '.'
 
     return render_template("tester.html",img_data=encoded_img_data.decode('utf-8'))
 

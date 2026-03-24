@@ -1,4 +1,4 @@
----------------------------------------------------------------- */ @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* ---------------------------------------------------------------- */ @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
   --font-1: "Lora", serif;
@@ -230,12 +230,13 @@
   *
   *
   * --------------------------------------------------------------------
-  * normalize.css v8.0.1 | MIT License |
+  * 
   * github.com/necolas/normalize.css
   * -------------------------------------------------------------------- */
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -441,6 +442,7 @@ body {
   background-color: var(--color-body);
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2215,4 +2217,61 @@ button.btn--pill {
   .ss-copyright span::after {
     display: none;
   }
+}
+
+/* Custom styles moved from help.html */
+#contact {
+  background-color: #cecece;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+#contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: white;
+  box-sizing: border-box;
+}
+
+#contactForm textarea {
+  height: 150px;
+}
+
+/* Intro scroll SVG */
+.s-intro__scroll svg {
+  fill: rgba(0, 0, 0, 1);
+  transform: rotate(180deg);
+}
+
+/* Services list */
+.services-list-horizontal {
+  margin-top: 20px;
+}
+
+.service-item-horizontal {
+  padding-bottom: 20px;
+  opacity: 1;
+  transform: translateY(0px);
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.service-item-horizontal dt {
+  margin-bottom: 10px;
+}
+
+/* Back to Top SVG */
+.ss-go-top svg {
+  fill: rgba(0, 0, 0, 1);
 }
