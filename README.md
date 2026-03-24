@@ -1,4 +1,4 @@
-﻿# Sentinel Shield
+# Sentinel Shield
 
 ## Overview
 Sentinel Shield is a modern passport verification and border control system that streamlines the traditional passport control method. Instead of relying on physical stamps and manual verification, this application enables swift passport verification within seconds, ensuring seamless entry into destination countries while maintaining maximum security.
@@ -11,6 +11,9 @@ Sentinel Shield is a modern passport verification and border control system that
 - **Face Recognition**: Matches passport holders with their identification photos
 - **QR Code Scanning**: Fast passport data retrieval via QR codes
 - **Admin Dashboard**: Manage users and system access
+
+## Resources
+- 🌟 **Design (Figma)**: [Link](https://www.figma.com/file/WeP4V42vp3TTvp5FTLZPQN/MiniP?type=design&node-id=0-1&mode=design&t=Gwkq3ij4oRUfqWaJ-0)
 
 ## Technologies Used
 - **Backend**: Flask (Python)
@@ -34,23 +37,16 @@ Sentinel Shield is a modern passport verification and border control system that
 
 ### Installation Steps
 1. Clone the repository
-   ```
-   git clone <repository-url>
-   cd sentinel-shield
-   ```
-
 2. Install required Python packages
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
-
 3. Set up the database
    - Start XAMPP control panel and ensure MySQL is running
    - Create a database named 'sentinel'
    - Import the database schema (not included in repo, contact administrators)
-
 4. Run the application
-   ```
+   ```bash
    python combine.py
    ```
    The application will be available at http://localhost:5000
@@ -72,27 +68,5 @@ The system utilizes several key tables:
 4. **Verification Process**: The system checks passport validity, visa requirements, security flags, and health requirements
 5. **Results**: The officer is presented with verification results and recommendations
 
-## Deployment Options
-For deploying this application to a production environment:
-
-### Option 1: Cloud Hosting with PostgreSQL
-1. Export your MySQL database
-2. Convert to PostgreSQL format
-3. Deploy to a cloud platform like Heroku, Railway, or Render
-4. Configure environment variables for database connection
-
-### Option 2: Traditional Hosting
-1. Set up a server with Python and MySQL
-2. Configure a web server (Nginx/Apache) with WSGI
-3. Set up proper security measures
-
-## Important Notes
-- Face recognition requires physical access to a camera
-- The system requires proper database setup for full functionality
-- For testing purposes, use the test accounts provided by administrators
-
 ## License
 This project is proprietary and confidential. Unauthorized copying, modification, distribution, or use is strictly prohibited.
-
-## Contact
-For questions or support, please contact the development team.
